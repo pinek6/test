@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="haufe.BasicTests"/>
+      <class name="haufe.LoadBrowser_Grid"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test">
+    <parameter name="browser" value="ff"></parameter>
+    <classes>
+      <class name="haufe.BasicTests"/>
+      <class name="haufe.LoadBrowser_Grid"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test">
+    <parameter name="browser" value="IE"></parameter>
+    <classes>
+      <class name="haufe.BasicTests"/>
+      <class name="haufe.LoadBrowser_Grid"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

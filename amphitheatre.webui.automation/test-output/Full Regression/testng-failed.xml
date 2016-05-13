@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [Full Regression]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="report.CustomReporter"/>
+  </listeners>
+  <test name="Firefox-MyLearning(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="FullRegression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.AskTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AskTests -->
+      <class name="tests.LibraryTests">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LibraryTests -->
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.AdminTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminTests -->
+      <class name="tests.GroupsTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- tests.GroupsTests -->
+      <class name="tests.BookmarkTests">
+        <methods>
+          <include name="after"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.BookmarkTests -->
+      <class name="tests.MyLearningTests">
+        <methods>
+          <include name="LearningPathsPageOpens"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="MyLearningPageOpens"/>
+          <include name="TranscriptPageOpens"/>
+        </methods>
+      </class> <!-- tests.MyLearningTests -->
+    </classes>
+  </test> <!-- Firefox-MyLearning(failed) -->
+  <test name="Firefox-Ask(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="FullRegression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.AskTests">
+        <methods>
+          <include name="PagingTextCountIsCorrect"/>
+          <include name="QuestionsAndAnswersShowMoreLinkFunctions"/>
+          <include name="Next2LinkFunctionsInRecentQuestionsFromOthersList"/>
+          <include name="setUp"/>
+          <include name="AskPageOpens"/>
+          <include name="beforeMethod"/>
+          <include name="Next2LinkFunctionsInMyUnansweredQuestionsList"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+          <include name="AskAQuestionPageOpens"/>
+          <include name="BrowseQandAPageOpens"/>
+          <include name="MoreLinkFunctionsInMyUnansweredQuestionsList"/>
+        </methods>
+      </class> <!-- tests.AskTests -->
+      <class name="tests.LibraryTests">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LibraryTests -->
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.AdminTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminTests -->
+      <class name="tests.GroupsTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- tests.GroupsTests -->
+      <class name="tests.MyLearningTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.MyLearningTests -->
+      <class name="tests.BookmarkTests">
+        <methods>
+          <include name="after"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.BookmarkTests -->
+    </classes>
+  </test> <!-- Firefox-Ask(failed) -->
+  <test name="Firefox-Groups(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="FullRegression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.AskTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AskTests -->
+      <class name="tests.LibraryTests">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LibraryTests -->
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.AdminTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminTests -->
+      <class name="tests.GroupsTests">
+        <methods>
+          <include name="SelectedSubjectsCanBeRemovedUsingFacetList"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="GroupsPageOpens"/>
+          <include name="CategoryListCanBeExpandedCollapsed"/>
+          <include name="TwistiesFunctionOnLibraryTabOnGroupsViewPage"/>
+          <include name="closeBrowser"/>
+          <include name="SelectedSubjectsCanBeRemovedUsingLeftColumn"/>
+          <include name="MyGroupsPageOpens"/>
+          <include name="FacetListIsPopulated"/>
+          <include name="MemberInfoDisplaysOnMembersTabOnGroupsViewPage"/>
+          <include name="after"/>
+          <include name="DiscussionsTabOnGroupsViewPageLoads"/>
+          <include name="JoinGroupsPageOpens"/>
+        </methods>
+      </class> <!-- tests.GroupsTests -->
+      <class name="tests.MyLearningTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.MyLearningTests -->
+      <class name="tests.BookmarkTests">
+        <methods>
+          <include name="after"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.BookmarkTests -->
+    </classes>
+  </test> <!-- Firefox-Groups(failed) -->
+  <test name="Firefox-Library(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="FullRegression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.AskTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AskTests -->
+      <class name="tests.LibraryTests">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+          <include name="SelectedSubjectsCanBeRemovedUsingFacetList"/>
+          <include name="setUp"/>
+          <include name="CategoryListCanBeExpandedCollapsed"/>
+          <include name="FacetListIsPopulated"/>
+          <include name="closeBrowser"/>
+          <include name="LibraryPageOpens"/>
+        </methods>
+      </class> <!-- tests.LibraryTests -->
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.AdminTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminTests -->
+      <class name="tests.GroupsTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- tests.GroupsTests -->
+      <class name="tests.MyLearningTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.MyLearningTests -->
+      <class name="tests.BookmarkTests">
+        <methods>
+          <include name="after"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.BookmarkTests -->
+    </classes>
+  </test> <!-- Firefox-Library(failed) -->
+</suite> <!-- Failed suite [Full Regression] -->

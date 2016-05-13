@@ -1,0 +1,10 @@
+package haufe.home;
+
+import org.openqa.selenium.WebDriver;
+
+public class Home{
+	
+	private WebDriver driver;
+	
+
+}

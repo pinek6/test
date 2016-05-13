@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]">
+  <parameter name="platform" value="WIN8"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value=""/>
+  <test name="Test Suite(failed)">
+    <parameter name="platform" value="WIN8"/>
+    <parameter name="version" value=""/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.webUI.nonFunctional.LibraryTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="LibraryPageOpens"/>
+          <include name="getBuildVersion"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.LibraryTests -->
+    </classes>
+  </test> <!-- Test Suite(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

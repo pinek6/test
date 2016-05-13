@@ -1,0 +1,23 @@
+package tests;
+
+import org.testng.annotations.BeforeMethod;
+
+import haufe.LoadBrowser;
+
+public class BasicTests extends LoadBrowser{
+	
+	
+	
+	@BeforeMethod()
+	public void beforeMethod()
+    {
+		getHomePage();
+    }
+	
+	@Test
+	public void changeLanguage()
+	{
+		
+	}
+
+}

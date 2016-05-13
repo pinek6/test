@@ -1,0 +1,32 @@
+package tests;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import haufe.LoadBrowser;
+import haufe.home.Home;
+
+public class BasicTests extends LoadBrowser{
+	
+	
+	
+	@BeforeMethod()
+	public void beforeMethod()
+    {
+		getHomePage();
+    }
+	
+	@Test
+	public void changeLanguage()
+	{
+		Home home = new Home(getDriver());
+		
+		home.clickLangDropdown();
+		home.selectLanguage("[en]");
+		
+		
+		Assert.assertEquals(home.getSloganText(),"Successful Talent Management Solutions Start with Peoplle","Slogan not as expected");
+	}
+
+}

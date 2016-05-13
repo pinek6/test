@@ -1,0 +1,15 @@
+package tests;
+
+import org.testng.annotations.BeforeMethod;
+
+public class BasicTests {
+	
+	
+	
+	@BeforeMethod()
+	public void beforeMethod()
+    {
+		getHomePage();
+    }
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;haufe/src/haufe/LoadBrowser.java&apos; to &apos;LoadBrowser_Grid.java&apos;" description="Rename resource &apos;LoadBrowser.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/haufe/LoadBrowser.java" name="LoadBrowser_Grid.java" stamp="1457463893652" updateReferences="true"/>
+</session>

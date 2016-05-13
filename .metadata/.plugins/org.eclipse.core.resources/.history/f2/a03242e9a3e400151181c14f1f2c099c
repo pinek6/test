@@ -1,0 +1,22 @@
+package haufe.home;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+
+
+
+public class Home{
+	
+	private WebDriver driver;
+	
+	public static String applicationURL = "http://www.umantis.com/";
+	
+	public Home(WebDriver driver)
+	{	
+		/* Read in the configuration file */
+		this.driver=driver;
+		driver.navigate().to(applicationURL);	
+		driver.manage().timeouts().implicitlyWait(Long.parseLong("60"), TimeUnit.SECONDS); 
+	}
+
+}

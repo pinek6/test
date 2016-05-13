@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [Sanity]" parallel="tests">
+  <parameter name="browser" value="internet explorer"/>
+  <parameter name="version" value="9"/>
+  <listeners>
+    <listener class-name="report.CustomReporter"/>
+  </listeners>
+  <test name="internet explorer-MyLearningTests(failed)" parallel="tests">
+    <parameter name="version" value="9"/>
+    <parameter name="browser" value="internet explorer"/>
+    <groups>
+      <run>
+        <include name="BVT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.BookmarkTests">
+        <methods>
+          <include name="after"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.BookmarkTests -->
+      <class name="tests.LibraryTests">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LibraryTests -->
+      <class name="tests.AskTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AskTests -->
+      <class name="tests.AdminTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.AdminTests -->
+      <class name="tests.GroupsTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- tests.GroupsTests -->
+      <class name="tests.MyLearningTests">
+        <methods>
+          <include name="LearningPathsPageOpens"/>
+          <include name="setUp"/>
+          <include name="after"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="TranscriptPageOpens"/>
+        </methods>
+      </class> <!-- tests.MyLearningTests -->
+    </classes>
+  </test> <!-- internet explorer-MyLearningTests(failed) -->
+</suite> <!-- Failed suite [Sanity] -->

@@ -1,0 +1,34 @@
+package haufe.home;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+
+
+public class Home{
+	
+	private WebDriver driver;
+	
+	public static String applicationURL = "http://www.umantis.com/";
+	
+	/* Element Locators */
+	private By langDropDown = By.cssSelector("[class='meta-nav'] > [class='dropdown']");
+	
+	public Home(WebDriver driver)
+	{	
+		/* Read in the configuration file */
+		this.driver=driver;
+		driver.navigate().to(applicationURL);	
+		driver.manage().timeouts().implicitlyWait(Long.parseLong("60"), TimeUnit.SECONDS); 
+	}
+	
+	public Home hoverOverLangDropdown(){
+		
+		
+		
+		return this;
+	}
+
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TEST" parallel="tests" thread-count="6">
+	<listeners>
+    	<listener class-name="report.CustomReporter" />
+    	<listener class-name="report.RetryListener" />
+    	<listener class-name="report.FixRetryListener" />
+    	<listener class-name="report.MyListener" />
+  	</listeners>		
+	<test name="WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="test" />
+    		</run>
+  		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test> 
+	<test name="WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="test" />
+      			<exclude name="IEOnly" />
+    		</run>
+ 		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test>
+ 	<test name="WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="test" />
+    		</run>
+  		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test>
+ 	<test name="WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="test" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test>
+  	<test name="MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="test" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test>
+  	<test name="MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="test" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test> 
+</suite>

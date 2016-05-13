@@ -1,0 +1,21 @@
+package haufe.home;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+
+import haufe.LoadBrowser;
+
+public class Home{
+	
+	private WebDriver driver;
+	
+	
+	public Home(WebDriver driver)
+	{	
+		/* Read in the configuration file */
+		this.driver=driver;
+		driver.navigate().to(LoadBrowser.applicationURL);	
+		driver.manage().timeouts().implicitlyWait(Long.parseLong("60"), TimeUnit.SECONDS); 
+	}
+
+}

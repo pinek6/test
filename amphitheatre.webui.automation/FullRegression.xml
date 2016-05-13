@@ -1,0 +1,1662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Full Regression" parallel="tests" thread-count="6">
+	<listeners>
+    	<listener class-name="report.CustomReporter" />
+    	<listener class-name="report.RetryListener" />
+    	<listener class-name="report.FixRetryListener" />
+    	<listener class-name="report.MyListener" />
+  	</listeners>
+  	<test name="Admin-Announcements-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.AnnouncementsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Announcements-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.AnnouncementsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Announcements-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.AnnouncementsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Announcements-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.AnnouncementsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Announcements-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.AnnouncementsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Announcements-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.AnnouncementsTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-BroadcastEmails-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.BroadcastEmailsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-BroadcastEmails-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.BroadcastEmailsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-BroadcastEmails-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.BroadcastEmailsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-BroadcastEmails-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.BroadcastEmailsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-BroadcastEmails-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.BroadcastEmailsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-BroadcastEmails-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.BroadcastEmailsTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-ContentAdministration-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ContentAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-ContentAdministration-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ContentAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-ContentAdministration-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ContentAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-ContentAdministration-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ContentAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-ContentAdministration-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ContentAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-ContentAdministration-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ContentAdministrationTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-LearningAdministration-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-LearningAdministration-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-LearningAdministration-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-LearningAdministration-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-LearningAdministration-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-LearningAdministration-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-Organizations-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.OrganizationsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Organizations-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.OrganizationsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Organizations-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.OrganizationsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Organizations-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.OrganizationsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Organizations-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.OrganizationsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Organizations-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.OrganizationsTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-People-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.PeopleTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-People-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.PeopleTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-People-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.PeopleTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-People-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.PeopleTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-People-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.PeopleTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-People-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.PeopleTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-Reports-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ReportsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Reports-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ReportsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Reports-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ReportsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Reports-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ReportsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Reports-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ReportsTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-Reports-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ReportsTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-SocialQandA-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SocialQandATests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-SocialQandA-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SocialQandATests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-SocialQandA-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SocialQandATests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-SocialQandA-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SocialQandATests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-SocialQandA-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SocialQandATests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-SocialQandA-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SocialQandATests"></class>
+		</classes>
+	</test>
+	<test name="Admin-System-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SystemTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-System-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SystemTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-System-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SystemTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-System-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SystemTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-System-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SystemTests"></class>
+		</classes>
+	</test>
+  	<test name="Admin-System-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SystemTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Groups-functional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-functional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-functional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-functional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-functional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-functional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.GroupsTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-MyLearning-functional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-functional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-functional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-functional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-functional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-functional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.MyLearningTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Profile-functional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-functional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-functional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-functional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-functional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-functional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.ProfileTests"></class>
+		</classes>
+	</test>
+		<test name="webUI-Registration-functional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-functional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-functional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-functional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-functional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-functional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.functional.RegistrationTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Bookmark-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Bookmark-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Bookmark-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Bookmark-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Bookmark-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Bookmark-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>
+    <test name="webUI-Groups-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Groups-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Library-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Library-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Library-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Library-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Library-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Library-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Login-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Login-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Login-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Login-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Login-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Login-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-MyLearning-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-MyLearning-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-PeopleSearch-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-PeopleSearch-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-PeopleSearch-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-PeopleSearch-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-PeopleSearch-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-PeopleSearch-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Profile-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Profile-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-QandA-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-QandA-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-QandA-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-QandA-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-QandA-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-QandA-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Registration-nonFunctional-WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-nonFunctional-WIN8-Chrome">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-nonFunctional-WIN7-IE-9">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-nonFunctional-WIN7-Firefox">
+		<parameter name="platform" value="WIN7"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-nonFunctional-MAC-Safari">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="safari"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.RegistrationTests"></class>
+		</classes>
+	</test>
+  	<test name="webUI-Registration-nonFunctional-MAC-Chrome">
+		<parameter name="platform" value="MAC"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.RegistrationTests"></class>
+		</classes>
+	</test>
+</suite>

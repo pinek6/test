@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" name="Failed suite [TEST]" parallel="methods">
+  <parameter name="platform" value="WINDOWS"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="report.CustomReporter"/>
+    <listener class-name="report.RetryListener"/>
+    <listener class-name="report.FixRetryListener"/>
+    <listener class-name="report.MyListener"/>
+  </listeners>
+  <test name="WIN8-Chrome(failed)" parallel="methods">
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="test"/>
+        <exclude name="IEOnly"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.webUI.functional.MyLearningTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="getBuildVersion"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.MyLearningTests -->
+      <class name="tests.webUI.nonFunctional.LibraryContentsTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="getContentCount"/>
+          <include name="allContentsLoadsFromLibrary"/>
+          <include name="printFailedContents"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.LibraryContentsTests -->
+    </classes>
+  </test> <!-- WIN8-Chrome(failed) -->
+</suite> <!-- Failed suite [TEST] -->

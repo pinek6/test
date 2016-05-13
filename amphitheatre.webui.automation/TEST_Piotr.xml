@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TEST" parallel="methods" thread-count="6">
+	<listeners>
+    	<listener class-name="report.CustomReporter" />
+    	<listener class-name="report.RetryListener" />
+    	<listener class-name="report.FixRetryListener" />
+    	<listener class-name="report.MyListener" />
+  	</listeners>		
+	<test name="WIN8-Chrome">
+		<parameter name="platform" value="WINDOWS"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+    		<run>
+      			<include name="test" />
+      			<exclude name="IEOnly" />
+    		</run>
+ 		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test>
+</suite>

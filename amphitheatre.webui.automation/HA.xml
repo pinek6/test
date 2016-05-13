@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="High Availability Test" parallel="tests" thread-count="4">
+	<listeners>
+    	<listener class-name="report.CustomReporter" />
+    	<listener class-name="report.RetryListener" />
+    	<listener class-name="report.FixRetryListener" />
+    	<listener class-name="report.MyListener" />
+  	</listeners>  		
+	<test name="webUI-Firefox-Library">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<parameter name="platform" value="WIN8"></parameter>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>		
+	<test name="webUI-IE10-MyLearning">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<parameter name="platform" value="WIN8"></parameter>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>	
+	<test name="webUI-Firefox-MyLearning-functional">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<parameter name="platform" value="WIN8"></parameter>
+		<classes>
+			<class name="tests.webUI.functional.MyLearningTests"></class>
+		</classes>
+	</test>		 		
+	<test name="Admin-Chrome-LearningAdministration">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<parameter name="platform" value="WIN8"></parameter>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FULLREGRESSION_IE" parallel="tests" thread-count="2">
+	<listeners>
+    	<listener class-name="report.CustomReporter" />
+    	<listener class-name="report.RetryListener" />
+    	<listener class-name="report.FixRetryListener" />
+    	<listener class-name="report.MyListener" />
+  	</listeners>		
+	<test name="WIN8-IE-10">
+		<parameter name="platform" value="WIN8"></parameter>
+		<parameter name="browser" value="internet explorer"></parameter>
+		<parameter name="version" value="10"></parameter>
+		<groups>
+    		<run>
+      			<include name="FullRegression" />
+    		</run>
+  		</groups>
+		    <packages>
+      			<package name="tests.webUI.functional" />
+      			<package name="tests.webUI.nonFunctional" />
+      			<package name="tests.admin" />
+      		</packages>
+	</test>	
+</suite>

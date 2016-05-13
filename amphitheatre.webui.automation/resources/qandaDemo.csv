@@ -1,0 +1,3 @@
+userType,contentType,CRUD,Anonymous,itemType,myYN,
+learner,summary,update,true,comment,true,
+contentSME,calculator,create,false,questionAnswer,true,

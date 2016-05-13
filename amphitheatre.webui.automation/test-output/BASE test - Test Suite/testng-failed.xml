@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" name="Failed suite [BASE test - Test Suite]" parallel="tests">
+  <parameter name="platform" value="MAC"/>
+  <parameter name="version" value=""/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="report.CustomReporter"/>
+    <listener class-name="report.RetryListener"/>
+    <listener class-name="report.FixRetryListener"/>
+    <listener class-name="report.MyListener"/>
+  </listeners>
+  <test name="[MAC/safari/] - webUI - LibraryTests(nonFunctional)(failed)" parallel="tests">
+    <parameter name="platform" value="MAC"/>
+    <parameter name="browser" value="safari"/>
+    <parameter name="version" value=""/>
+    <groups>
+      <run>
+        <include name="test"/>
+        <exclude name="IEonly"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.admin.SystemTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.SystemTests -->
+      <class name="tests.webUI.nonFunctional.ProfileTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.ProfileTests -->
+      <class name="tests.webUI.nonFunctional.BookmarkTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.BookmarkTests -->
+      <class name="tests.webUI.functional.ProfileTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.ProfileTests -->
+      <class name="tests.webUI.functional.MyLearningTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.MyLearningTests -->
+      <class name="tests.admin.AnnouncementsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.AnnouncementsTests -->
+      <class name="tests.admin.LearningAdministrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.LearningAdministrationTests -->
+      <class name="tests.admin.OrganizationsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.OrganizationsTests -->
+      <class name="tests.webUI.nonFunctional.PeopleSearchTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.PeopleSearchTests -->
+      <class name="tests.webUI.functional.GroupsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.GroupsTests -->
+      <class name="tests.webUI.nonFunctional.GroupsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.GroupsTests -->
+      <class name="tests.webUI.nonFunctional.LibraryTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="LibraryPageOpens"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="LibraryListViewDisplays"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.LibraryTests -->
+      <class name="tests.webUI.nonFunctional.MyLearningTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.MyLearningTests -->
+      <class name="tests.admin.ReportsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.ReportsTests -->
+      <class name="tests.admin.SocialQandATests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.SocialQandATests -->
+      <class name="tests.admin.InvitationsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.InvitationsTests -->
+      <class name="tests.webUI.nonFunctional.QandATests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.QandATests -->
+      <class name="tests.admin.ContentAdministrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.ContentAdministrationTests -->
+      <class name="tests.webUI.functional.QandATests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.QandATests -->
+      <class name="tests.webUI.functional.RegistrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.RegistrationTests -->
+      <class name="tests.webUI.nonFunctional.LoginTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.LoginTests -->
+      <class name="tests.admin.BroadcastEmailsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.BroadcastEmailsTests -->
+      <class name="tests.admin.PeopleTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.PeopleTests -->
+      <class name="tests.webUI.nonFunctional.RegistrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="getBuildVersion"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.RegistrationTests -->
+    </classes>
+  </test> <!-- [MAC/safari/] - webUI - LibraryTests(nonFunctional)(failed) -->
+  <test name="[MAC/chrome/] - webUI - LibraryTests(nonFunctional)(failed)" parallel="tests">
+    <parameter name="platform" value="MAC"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value=""/>
+    <groups>
+      <run>
+        <include name="test"/>
+        <exclude name="IEonly"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.admin.SystemTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.SystemTests -->
+      <class name="tests.webUI.nonFunctional.ProfileTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.ProfileTests -->
+      <class name="tests.webUI.nonFunctional.BookmarkTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.BookmarkTests -->
+      <class name="tests.webUI.functional.ProfileTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.ProfileTests -->
+      <class name="tests.webUI.functional.MyLearningTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.MyLearningTests -->
+      <class name="tests.admin.AnnouncementsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.AnnouncementsTests -->
+      <class name="tests.admin.LearningAdministrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.LearningAdministrationTests -->
+      <class name="tests.admin.OrganizationsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.OrganizationsTests -->
+      <class name="tests.webUI.nonFunctional.PeopleSearchTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.PeopleSearchTests -->
+      <class name="tests.webUI.functional.GroupsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.GroupsTests -->
+      <class name="tests.webUI.nonFunctional.GroupsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.GroupsTests -->
+      <class name="tests.webUI.nonFunctional.LibraryTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="LibraryPageOpens"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="LibraryListViewDisplays"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.LibraryTests -->
+      <class name="tests.webUI.nonFunctional.MyLearningTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.MyLearningTests -->
+      <class name="tests.admin.ReportsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.ReportsTests -->
+      <class name="tests.admin.SocialQandATests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.SocialQandATests -->
+      <class name="tests.admin.InvitationsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.InvitationsTests -->
+      <class name="tests.webUI.nonFunctional.QandATests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.QandATests -->
+      <class name="tests.admin.ContentAdministrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.ContentAdministrationTests -->
+      <class name="tests.webUI.functional.QandATests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.QandATests -->
+      <class name="tests.webUI.functional.RegistrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.RegistrationTests -->
+      <class name="tests.webUI.nonFunctional.LoginTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.LoginTests -->
+      <class name="tests.admin.BroadcastEmailsTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.BroadcastEmailsTests -->
+      <class name="tests.admin.PeopleTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.admin.PeopleTests -->
+      <class name="tests.webUI.nonFunctional.RegistrationTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeSuite"/>
+          <include name="getBuildVersion"/>
+        </methods>
+      </class> <!-- tests.webUI.nonFunctional.RegistrationTests -->
+    </classes>
+  </test> <!-- [MAC/chrome/] - webUI - LibraryTests(nonFunctional)(failed) -->
+</suite> <!-- Failed suite [BASE test - Test Suite] -->

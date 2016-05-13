@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BVT" parallel="tests" thread-count="4">
+	<listeners>
+    	<listener class-name="report.CustomReporter" />
+    	<listener class-name="report.RetryListener" />
+    	<listener class-name="report.FixRetryListener" />
+    	<listener class-name="report.MyListener" />
+  	</listeners>  		
+	<test name="webUI-Chrome-Profile">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test><test name="webUI-Chrome-QandA">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test><test name="webUI-Chrome-Bookmarks">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Chrome-Groups">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+		<test name="webUI-Chrome-Library">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test><test name="webUI-Chrome-Login">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>	
+		<test name="webUI-Chrome-MyLearning">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>	
+	<test name="webUI-Chrome-PeopleSearch">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>		
+	<test name="webUI-Firefox-Groups">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>		
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.GroupsTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Firefox-Bookmarks">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.BookmarkTests"></class>
+		</classes>
+	</test>	
+		<test name="webUI-Firefox-Library">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LibraryTests"></class>
+		</classes>
+	</test>	
+		<test name="webUI-Firefox-MyLearning">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.MyLearningTests"></class>
+		</classes>
+	</test>	
+		<test name="webUI-Firefox-QandA">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.QandATests"></class>
+		</classes>
+	</test>	
+		<test name="webUI-Firefox-Profile">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.ProfileTests"></class>
+		</classes>
+	</test>	
+		<test name="webUI-Firefox-Login">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT"  />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.LoginTests"></class>
+		</classes>
+	</test>
+	<test name="webUI-Firefox-PeopleSearch">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.webUI.nonFunctional.PeopleSearchTests"></class>
+		</classes>
+	</test>
+	<test name="Admin-Firefox-Announcements">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.AnnouncementsTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-BroadcastEmails">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.BroadcastEmailsTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-ContentAdministration">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ContentAdministrationTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-Invitations">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.InvitationsTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-LearningAdministration">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.LearningAdministrationTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-Organizations">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.OrganizationsTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-People">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.PeopleTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-Reports">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.ReportsTests"></class>
+		</classes>
+	</test>	  		
+	<test name="Admin-Firefox-SocialQandA">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SocialQandATests"></class>
+		</classes>
+	</test>
+	<test name="Admin-Firefox-System">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="version" value=""></parameter>
+		<groups>
+    		<run>
+      			<include name="UAT-BVT" />
+      			<exclude name="IEOnly" />
+    		</run>
+  		</groups>
+		<classes>
+			<class name="tests.admin.SystemTests"></class>
+		</classes>	
+	</test>	
+</suite>

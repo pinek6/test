@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [BVT]" parallel="tests">
+  <parameter name="platform" value="WIN7"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="9"/>
+  <listeners>
+    <listener class-name="report.CustomReporter"/>
+    <listener class-name="report.RetryListener"/>
+    <listener class-name="report.FixRetryListener"/>
+  </listeners>
+  <test name="webUI-Bookmarks-WIN7-IE-9(failed)" parallel="tests">
+    <parameter name="platform" value="WIN7"/>
+    <parameter name="version" value="9"/>
+    <parameter name="browser" value="internet explorer"/>
+    <groups>
+      <run>
+        <include name="test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.webUI.functional.QandA">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="getBuildVersion"/>
+          <include name="closeBrowser"/>
+          <include name="QandAtest"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.QandA -->
+    </classes>
+  </test> <!-- webUI-Bookmarks-WIN7-IE-9(failed) -->
+  <test name="webUI-Bookmarks-WIN8-Chrome(failed)" parallel="tests">
+    <parameter name="platform" value="WIN8"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="test"/>
+        <exclude name="IEOnly"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.webUI.functional.QandA">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="getBuildVersion"/>
+          <include name="closeBrowser"/>
+          <include name="QandAtest"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.QandA -->
+    </classes>
+  </test> <!-- webUI-Bookmarks-WIN8-Chrome(failed) -->
+  <test name="webUI-Bookmarks-WIN8-IE-10(failed)" parallel="tests">
+    <parameter name="platform" value="WIN8"/>
+    <parameter name="version" value="10"/>
+    <parameter name="browser" value="internet explorer"/>
+    <groups>
+      <run>
+        <include name="test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.webUI.functional.QandA">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="getBuildVersion"/>
+          <include name="closeBrowser"/>
+          <include name="QandAtest"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.QandA -->
+    </classes>
+  </test> <!-- webUI-Bookmarks-WIN8-IE-10(failed) -->
+  <test name="webUI-Bookmarks-WIN7-Firefox(failed)" parallel="tests">
+    <parameter name="platform" value="WIN7"/>
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="test"/>
+        <exclude name="IEOnly"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.webUI.functional.QandA">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="getBuildVersion"/>
+          <include name="closeBrowser"/>
+          <include name="QandAtest"/>
+        </methods>
+      </class> <!-- tests.webUI.functional.QandA -->
+    </classes>
+  </test> <!-- webUI-Bookmarks-WIN7-Firefox(failed) -->
+</suite> <!-- Failed suite [BVT] -->

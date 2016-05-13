@@ -1,0 +1,92 @@
+package haufe;
+
+import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
+import haufe.home.Home;
+
+public class LoadBrowser_WebDriver {
+	
+	protected WebDriver driver = null;
+
+	 
+	 /* Selenium Grid HUB URL */
+	 public static String applicationURL = "http://www.umantis.com/";
+	 public String currentBrowser;
+	 public String version;
+	 public String platform;
+	 
+	 int numberOfTimesToRetryInitialization = 3;
+	 int currentRetry=0;
+	 
+	 /* Supported browsers are internet explorer, chrome, safari and firefox */
+	 @Parameters({"browser","version","platform"})
+	 @BeforeMethod(groups={"BVT","FullRegression","test","UAT-BVT"})
+	 public synchronized void setUp( @Optional("") String browser, @Optional("")String version, @Optional("")String platform) throws MalformedURLException 
+	 { 		
+		 	WebDriver driver = new FirefoxDriver();
+		 
+//		 	this.currentBrowser=browser.toLowerCase();
+//		 	this.version=version.toLowerCase();
+//		 	this.platform=platform.toLowerCase();		 	
+//		 	
+//		 	threadDriver = new ThreadLocal<RemoteWebDriver>();    
+//	        DesiredCapabilities dc = new DesiredCapabilities();	  
+//	        
+//	        /* Set platform, if required */
+//	        if (!platform.equals(""))
+//	        {
+//	        	if (platform.equals("WIN7"))	        	
+//	        		dc.setPlatform(Platform.WINDOWS);
+//	        	else if (platform.equals("MAC"))
+//	        		dc.setPlatform(Platform.MAC);
+//	        	else if (platform.equals("WIN8"))
+//	        		dc.setPlatform(Platform.WIN8);
+//	        	else
+//	        		dc.setPlatform(Platform.WINDOWS);
+//	        }	 	        
+//	        
+//	        /* Allowed browser values are chrome, firefox and internet explorer , safari*/
+//	        dc.setBrowserName(browser);
+//	        
+//	        /* For internet explorer, ignore security domains to prevent UnreachableBrowserException error */
+//	        if (browser.equals("internet explorer"))
+//	        	dc.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+//	        
+//	        /* Set browser version, if required */
+//	        if (!version.equals(""))
+//	        	dc.setVersion(version);        
+//	        threadDriver.set(new RemoteWebDriver(new URL(hubURL), dc));	
+	        driver.manage().window().maximize();
+
+	
+	        /* Add implicit wait */
+	        driver.manage().timeouts().implicitlyWait(Long.parseLong("60"), TimeUnit.SECONDS);
+	 }
+	 
+	 public WebDriver getDriver() 
+	 {
+			return driver;
+	 }
+	 
+	 public void getHomePage(){
+		 
+		 /* The home page should launch */
+	     	new Home(getDriver());		 
+	 }
+	 	 			
+	@AfterMethod(groups={"BVT","FullRegression"}, alwaysRun = true)
+	 public void closeBrowser() 
+	 {
+		/* Close the browser */
+		if (getDriver() != null)
+			getDriver().quit();	 
+	 }
+}

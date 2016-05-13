@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="haufe.LoadBrowser"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="bsh.Console"/>
+<fullyQualifiedTypeName name="haufe.home.Home"/>
+<fullyQualifiedTypeName name="webUI.CommonMethods"/>
+<fullyQualifiedTypeName name="haufe.CommonMethods"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.safari.SafariDriver"/>
+<fullyQualifiedTypeName name="haufe.LoadBrowser_Grid"/>
+</qualifiedTypeNameHistroy>

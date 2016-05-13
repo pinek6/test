@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="internet explorer"/>
+  <test name="Test_chrome(failed)" parallel="none">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="haufe.BasicTests">
+        <methods>
+          <include name="changeLanguage"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- haufe.BasicTests -->
+    </classes>
+  </test> <!-- Test_chrome(failed) -->
+  <test name="Test_ff(failed)" parallel="none">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="haufe.BasicTests">
+        <methods>
+          <include name="changeLanguage"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- haufe.BasicTests -->
+    </classes>
+  </test> <!-- Test_ff(failed) -->
+  <test name="Test_IE(failed)" parallel="none">
+    <parameter name="browser" value="internet explorer"/>
+    <classes>
+      <class name="haufe.BasicTests">
+        <methods>
+          <include name="changeLanguage"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- haufe.BasicTests -->
+    </classes>
+  </test> <!-- Test_IE(failed) -->
+</suite> <!-- Failed suite [Suite] -->

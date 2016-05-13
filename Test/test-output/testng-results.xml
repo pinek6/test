@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="71785" started-at="2016-03-09T20:24:47Z" finished-at="2016-03-09T20:25:59Z">
+    <groups>
+    </groups>
+    <test name="Test_chrome" duration-ms="20776" started-at="2016-03-09T20:24:47Z" finished-at="2016-03-09T20:25:08Z">
+      <class name="haufe.BasicTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:haufe.BasicTests@2d209079]" name="setUp" is-config="true" duration-ms="7707" started-at="2016-03-09T21:24:47Z" finished-at="2016-03-09T21:24:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="changeLanguage()[pri:0, instance:haufe.BasicTests@2d209079]" name="changeLanguage" duration-ms="12102" started-at="2016-03-09T21:24:55Z" finished-at="2016-03-09T21:25:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeLanguage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:haufe.BasicTests@2d209079]" name="closeBrowser" is-config="true" duration-ms="934" started-at="2016-03-09T21:25:07Z" finished-at="2016-03-09T21:25:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- haufe.BasicTests -->
+    </test> <!-- Test_chrome -->
+    <test name="Test_ff" duration-ms="20182" started-at="2016-03-09T20:25:08Z" finished-at="2016-03-09T20:25:28Z">
+      <class name="haufe.BasicTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:haufe.BasicTests@39ba5a14]" name="setUp" is-config="true" duration-ms="7504" started-at="2016-03-09T21:25:08Z" finished-at="2016-03-09T21:25:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="changeLanguage()[pri:0, instance:haufe.BasicTests@39ba5a14]" name="changeLanguage" duration-ms="11837" started-at="2016-03-09T21:25:16Z" finished-at="2016-03-09T21:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeLanguage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:haufe.BasicTests@39ba5a14]" name="closeBrowser" is-config="true" duration-ms="839" started-at="2016-03-09T21:25:28Z" finished-at="2016-03-09T21:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- haufe.BasicTests -->
+    </test> <!-- Test_ff -->
+    <test name="Test_IE" duration-ms="30782" started-at="2016-03-09T20:25:28Z" finished-at="2016-03-09T20:25:59Z">
+      <class name="haufe.BasicTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:haufe.BasicTests@7e0ea639]" name="setUp" is-config="true" duration-ms="12042" started-at="2016-03-09T21:25:28Z" finished-at="2016-03-09T21:25:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[internet explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="changeLanguage()[pri:0, instance:haufe.BasicTests@7e0ea639]" name="changeLanguage" duration-ms="17784" started-at="2016-03-09T21:25:40Z" finished-at="2016-03-09T21:25:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeLanguage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:haufe.BasicTests@7e0ea639]" name="closeBrowser" is-config="true" duration-ms="953" started-at="2016-03-09T21:25:58Z" finished-at="2016-03-09T21:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- haufe.BasicTests -->
+    </test> <!-- Test_IE -->
+  </suite> <!-- Suite -->
+</testng-results>
